@@ -87,7 +87,7 @@ trait VersionableTrait
      */
     public function versions()
     {
-        return $this->morphMany(Version::class, 'versionable');
+        return $this->morphMany('Mpociot\Versionable\Version', 'versionable');
     }
 
     /**
